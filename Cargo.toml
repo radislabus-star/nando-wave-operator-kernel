@@ -1,0 +1,24 @@
+[package]
+name = "nando-wave-operator-kernel"
+version = "0.1.0"
+edition = "2024"
+license = "MIT"
+rust-version = "1.85"
+description = "Bounded, canonical operator IR and fail-closed program contracts extracted from Nando Wave"
+readme = "README.md"
+repository = "https://github.com/radislabus-star/nando-wave-operator-kernel"
+keywords = ["operators", "ir", "deterministic", "verification", "agents"]
+categories = ["data-structures", "development-tools"]
+
+[dependencies]
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+sha2 = "0.10"
+
+[lints.rust]
+unsafe_code = "forbid"
+
+[lints.clippy]
+dbg_macro = "deny"
+todo = "deny"
+unwrap_used = "deny"
